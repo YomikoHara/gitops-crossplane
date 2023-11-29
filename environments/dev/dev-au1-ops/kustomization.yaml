@@ -1,0 +1,8 @@
+resources:
+- ../../../overlays/dev/
+
+patches:
+- target:
+    kind: HelmRelease
+    name: crossplane
+  path: patches/patch-chart-version.yaml
